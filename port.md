@@ -90,16 +90,16 @@ Also you can edit some fields, like `name` and `description`  in the file `couch
 ```
 
 ### Adding content to the app and pushing it
-Now that you have generated the app, you will need to add the original app data ~~(the one you're porting)~~ to `_attachments` folder you may want to remove everything inside that folder before you add the new content, and then copy
+Now that you have generated the app, you will need to add the original app data ~~(the one you're porting)~~ to `_attachments` folder. You may want to remove everything inside that folder before you add the new content. You can remove all items inside it and copy the data with the following terminal commands:
 
 ```
 rm -rf _attachments/*
 cp -r /home/user/myoriginalapp/* _attachments/
 ```
 
-Now that you have done all those steps you will need to upload the app to the server:<br>
+Now that you have done all those steps, you will need to upload the app to the server:<br>
 `couchapp push myserver`<br>where `myserver` is the one you specified in the `.couchapprc` file.
 ![push](http://people.sugarlabs.org/ignacio/push.png)
 
 
-The app is now available in the link specified, you should be able to see the database in http://127.0.0.1:5985/_utils/database.html?myapp
+After this, The app will be available on the specified link. You should be able to see the database in http://127.0.0.1:5985/_utils/database.html?myapp
