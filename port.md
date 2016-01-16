@@ -1,7 +1,7 @@
 ## Porting HTML App to CouchApp
-Requirements
 
-* couchapp
+Prerequisites:
+* [Couchapp](#Couchapp installation)
 * couchdb instance
 * desired javascript/html application
 
