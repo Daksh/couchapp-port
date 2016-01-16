@@ -2,12 +2,12 @@
 
 Prerequisites:
 * [Couchapp](#couchapp-installation)
-* couchdb instance
-* desired javascript/html application
+* [Couchdb Instance](#couchdb-instance)
+* Desired JavaScript/HTML application
 
 
-### Couchapp installation
-Clone the [couchapp repository](https://github.com/couchapp/couchapp.git), build and install it. With the following commands from a terminal:
+### Couchapp Installation
+Clone the [couchapp repository](https://github.com/couchapp/couchapp.git), build and install it. With the following commands (from a terminal):
 
 ```
 git clone https://github.com/couchapp/couchapp.git 
@@ -16,7 +16,7 @@ python setup.py build
 sudo python setup.py install
 ```
 
-### Couchdb instance
+### Couchdb Instance
 For this we will be using a pre-configured virtual machine with `couchdb instance`
 
 Requirements:
@@ -39,10 +39,10 @@ In the file `Vagrantfile`, You will need to add the line `config.vm.box_version 
 vagrant up
 ```
 
-You should be able to see the virtual machine on virtualbox once the script finishes
+You should be able to see the virtual machine on virtualbox once the script from the above command finishes:
 ![virtualbox](http://people.sugarlabs.org/ignacio/virtualbox.png)
-also you should be able to access to [http://127.0.0.1:5985/](http://127.0.0.1:5985/) to get a output like this one
-(all in-line)
+Also you should be able to access [http://127.0.0.1:5985/](http://127.0.0.1:5985/) and get an output like:
+(all in one line)
 
 ```
 {
@@ -58,9 +58,9 @@ also you should be able to access to [http://127.0.0.1:5985/](http://127.0.0.1:5
 
 ### Generating the couchapp
 Using `couchapp generate` command you will be able to generate the structure of a couchapp:
-`couchapp generate appname`
+`couchapp generate test2`
 
-In this case I will generate the app *"test2"*
+In this case I will generate the app called *"test2"*
 
 ![generate](http://people.sugarlabs.org/ignacio/generate.png)
 
