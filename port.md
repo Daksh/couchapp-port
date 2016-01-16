@@ -64,10 +64,11 @@ In this case I will generate the app called *"test2"*
 
 ![generate](http://people.sugarlabs.org/ignacio/generate.png)
 
-The folder test2 ~~(appname)~~ will be created.
+The folder `test2 ~~(appname)~~` will be created.
 
-After you run it you will need to edit the file `.couchapprc`, you need to edit this file in order to add the server path:
-This should be the content, where _db_ is the server path, in this case it is _http://127.0.0.1:5985_ and _myapp_ is the database where I want to insert the app
+After you run it, you will need to edit the file `.couchapprc` in order to add the server path.
+
+The file should be like the one shown below. In this file, `db` is the server path, in my case it is `http://127.0.0.1:5985`, followed by `myapp`. Where `myapp` is the database where I want to insert the app.
 
 ```
 { 
@@ -79,7 +80,7 @@ This should be the content, where _db_ is the server path, in this case it is _h
 }
 ```
 
-Also you can edit some data, like _name_ and _description_  in the file `couchapp.json`
+Also you can edit some fields, like `name` and `description`  in the file `couchapp.json`
 
 ```
 {
