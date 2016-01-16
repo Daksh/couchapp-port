@@ -7,7 +7,7 @@ Requirements
 
 
 ### Couchapp installation
-Clone couchapp [from its repository](https://github.com/couchapp/couchapp.git), then build and install it.
+Clone the [couchapp repository](https://github.com/couchapp/couchapp.git), build and install it. With the following commands from a terminal:
 
 ```
 git clone https://github.com/couchapp/couchapp.git 
@@ -17,26 +17,24 @@ sudo python setup.py install
 ```
 
 ### Couchdb instance
-In this case I will use a pre-configured vm with couchdb instance
-Requirements
+For this we will be using a pre-configured virtual machine with `couchdb instance`
+
+Requirements:
 
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [Vagrantup](https://www.vagrantup.com/downloads.html)
 * [Vagrant config repo](https://github.com/dogi/ole--vagrant-bells)
 
-Clone the vagrant config repo
-
+Once you have installed the Virtual Box and Vagrantup. You will have to clone the Vagrant config repo like so:
 
 ```
 git clone https://github.com/dogi/ole--vagrant-bells/ vagrant-vm
 cd vagrant-vm/release
 ```
 
-You will need to add `config.vm.box_version = "8.2.1"` to the file `Vagrantfile`.
+In the file `Vagrantfile`, You will need to add the line `config.vm.box_version = "8.2.1"` after the line `config.vm.hostname = "ole"`.
 
-Add it after `config.vm.hostname = "ole"` line
-
-#### Turn on the vagrant instance/vm
+#### Turn on the vagrant instance/Virtual Machine
 ```
 vagrant up
 ```
